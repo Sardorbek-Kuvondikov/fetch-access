@@ -8,49 +8,24 @@
   </head>
   <body class="bg-[#222732]">
     <div class="">
-      <h1 class="text-center pt-8 pb-8 text-2xl bg-[#2b313c] text-white">
+      <h1
+        class="text-center pt-8 pb-8 text-2xl bg-[#2b313c] text-white sticky top-0 z-50"
+      >
         WELCOME TO WEB SITE
       </h1>
       <div class="mt-8 w-[1500px] m-auto flex">
-        <div class="w-[490px] p-2 text-white">
+        <div class="w-[490px] p-2 text-white overflow-y-auto h-screen scrollbar">
           <h2 class="text-xl">Users</h2>
-          <ul class="mt-5 snap-x js-render">
-            <li
-              class="bg-[#2b313c] mb-4 p-2 rounded-md text-white relative hover:cursor-pointer"
-            >
-              <span
-                class="absolute top-0 left-0 bg-indigo-700 rounded-tl-md pl-2 pr-2 js-id"
-                >1</span
-              >
-              <h3 class="mt-6 text-xl js-name">name</h3>
-              <p>
-                Email:
-                <a class="text-blue-400 js-email" href="#">emal@gmail.com</a>
-              </p>
-              <samp
-                >Phone:
-                <a class="text-blue-400 js-phone-number" href="#"
-                  >23984759812502</a
-                ></samp
-              >
-              <p>
-                Address:
-                <addr class="inline-block ml-2 js-street">adress</addr>,
-                <addr class="js-suite">salom</addr>,
-                <addr class="js-city">aslin</addr>
-              </p>
-              <button class="js-btn">click</button>
-            </li>
-          </ul>
+          <ul class="mt-5 snap-x js-render"></ul>
         </div>
         <!-- POSTS -->
-        <div class="w-[490px] p-2 text-white">
+        <div class="w-[490px] p-2 text-white overflow-y-auto h-screen scrollbar">
           <h2 class="text-xl text-center">Posts</h2>
           <ul class="mt-5 rounded-md js-post-render"></ul>
         </div>
 
         <!-- COMMINTS -->
-        <div class="w-[490px] p-2 text-white">
+        <div class="w-[490px] p-2 text-white overflow-y-auto h-screen scrollbar">
           <h2 class="text-xl text-center">Commints</h2>
           <ul class="mt-5 bg-slate-600 rounded-md js-commints-render"></ul>
         </div>
@@ -59,7 +34,7 @@
 
     <template class="js-template">
       <li
-        class="bg-[#2b313c] mb-4 p-2 rounded-md text-white relative transition-all hover:cursor-pointer hover:bg-[#313a49c8] js-item"
+        class="bg-[#2b313c] mb-4 p-2 rounded-md text-white relative transition-all hover:cursor-pointer hover:bg-[#313a49c8] active:cursor-progress js-item"
       >
         <span
           class="absolute top-0 left-0 bg-indigo-700 rounded-tl-md pl-2 pr-2 js-id indent-px"
@@ -87,7 +62,7 @@
 
     <template class="js-posts-template">
       <li
-        class="bg-[#2b313c] mb-4 p-2 rounded-md text-white relative hover:cursor-pointer js-post-item"
+        class="bg-[#2b313c] mb-4 p-2 rounded-md text-white relative hover:cursor-pointer active:cursor-progress js-post-item"
       >
         <span
           class="absolute top-0 left-0 bg-indigo-700 rounded-tl-md pl-2 pr-2 js-post-id"
