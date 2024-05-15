@@ -57,6 +57,8 @@ function renderData(arr, node) {
 
 elRender.addEventListener("click", (evt) => {
   evt.preventDefault();
+  elCommintsRender.innerHTML = "";
+
   let userId = evt.target.closest(".js-item").dataset.dataId;
   fetchData(BASE__URL + `/posts?userId=${userId}`, {
     ...reqObject,
